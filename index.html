@@ -1,277 +1,258 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LCaruso.net</title>
-    <link rel="shortcut icon" href="./images/batmanfavicon1.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/estilos.css">
-
-    <meta name="theme-color" content="#2091f9">
-    <meta name="title" content="Web Integral">
-    <meta name="description" content="Descripcion modificable Integral web. Esta descripcion sera la que veas cuando se realice una busqueda en Google." />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.integralweb.com" />
-    <meta property="og:title" content="Titulo modificable Integral Web" />
-    <meta property="og:description" content="Descripcion modificable Integral web. Esta descripcion sera la que veas cuando se realice una busqueda en Google." />
-    <meta property="og:image" content="https://www.integralweb.com/images/teclado.jpg" />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://www.integralweb.com" />
-    <meta property="twitter:title" content="Titulo modificable Integral Web" />
-    <meta property="twitter:description" content="Descripcion modificable Integral web. Esta descripcion sera la que veas cuando se realice una busqueda en Google." />
-    <meta property="twitter:image" content="https://www.integralweb.com/images/teclado.jpg" />
-
-    <!-- Meta Tags Generated with https://metatags.io -->
-
-
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="hero">
-        <nav class="nav container">
-            <div class="nav__logo">
-                <h2 class="nav__title">Logo1</h2>
-            </div>
+    <header class="inicio">
 
-            <ul class="nav__link nav__link--menu">
-                <li class="nav__items">
-                    <a href="#" class="nav__links">Inicio</a>
+        <nav class="nav_container">
+            <ul class="nav_link">
+                <li class="nav_items">
+                    <a href="#inicio" class="nav_links"><img src="./images/iconos about/home.svg" alt="home" class="nav_list_img">Inicio</a>
                 </li>
-
-                <li class="nav__items">
-                    <a href="#" class="nav__links">Sobre mi</a>
+                <li class="nav_items">
+                    <a href="#salto_pagina1" class="nav_links"><img src="./images/iconos about/about.svg" alt="about" class="nav_list_img">Sobre mi</a>
                 </li>
-
-                <li class="nav__items">
-                    <a href="#" class="nav__links">Contacto</a>
+                <!-- <li class="nav_items">
+                    <a href="#skills" class="nav_links"><img src="./images/iconos about/skills.svg" alt="skills" class="nav_list_img">Skills</a>
+                </li> -->
+                <li class="nav_items">
+                    <a href="#salto_pagina2" class="nav_links"><img src="./images/iconos about/rocket.svg" alt="projects" class="nav_list_img">Proyectos</a>
                 </li>
-
-                <li class="nav__items">
-                    <a href="#" class="nav__links">Comentarios</a>
+                <li class="nav_items">
+                    <a href="#cv" class="nav_links"><img src="./images/iconos about/cv.svg" alt="cv" class="nav_list_img">C.V</a>
                 </li>
-
-                <img src="./images/cerrar.svg" class="nav__close" alt="cerrar">
+                <li class="nav_items">
+                    <a href="#contact" class="nav_links"><img src="./images/iconos about/contact.svg" alt="contact" class="nav_list_img">Contacto</a>
+                </li>
             </ul>
-
-            <div class="nav__menu">
-                <img src="./images/menu.svg" class="nav__img" alt="menu">
-            </div>
+            <span class="flechas_menu">
+                <img src="./images/iconos about/menu.svg" alt="flecha" id="toggleMenu" class="flecha_menu">
+            </span>
         </nav>
-
-        <section class="hero__container container">
-            <h1 class="hero__title">Texto modificable dentro de section.</h1>
-            <p class="hero__paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero perspiciatis debitis, saepe tempore rerum ipsum consectetur deserunt harum exercitationem, repudiandae labore deleniti accusantium magni quod veritatis dolorem numquam, neque voluptates.</p>
-                <a href="#" class="cta">Modificar</a>
+        <div class="config_container">
+            <ul class="config_links">
+                <li class="config_items">
+                    <a href="#" class="config_link"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC6ElEQVR4nO2Yb2gSYRzHHyJ6Eb3qfS+uV70MerFe9aIXriB602K2RkG9qhcjrbVm5a2iNgpjM3ChbLRZsdpi6Gq4/sxFC605lbQcaYORMtZmtzUcuJBf3KN3ifPK03s8hfvCD+6ee/P93H2/dz4ipEiRIkUVKdq5sK1+KO7ebWFSlGkVCp0x/yz4ZiJSTcwbCncEg8EtogHUg3GXGOPcGJxRKQGAHRZCNIDYO8/N6eFFyQF8M+F50QDFmGenpneFAEAEygZAoAdQdgASPUDlBCDRA1ROADE9qGvS4SkrgGogAZzY41J6UCcHQOdUkgdgjwvtAWe20PGRAvj6M8UDRJhUwT2oCABVJj4sRDgDUpsnRmK/Bz1DI9j0yZYb4A6EyEWIi889TxIPqy6BGAn14LV7GloN9+HhyFj63OWBY1o9Bui3Och2gIvPoacJPKy+CcRI6HvA3e3jzW0w+s4NZ6/dwecsFNESc/H5/isFOzNrcytpoANPEgV/D7yhMFzpNGPTak36zp/S3YRJb5AsABcfi3+dXzP71vGa0ZMU1YMPn77AiYvX+cI+GB4l/xrNfvvkSihG+XrAlrTFYMLGjzZdTj8JrZ7vBBGA7I+XkA7miVFuD8Y/euEMfRubrtdehUcvXsEts5V/EnqjBd77gtIDcPGxBv7Gh5u+QDpG7Fvpfz3Q3e3GRhub28A2PsmvsxFquEDja5r2LukBuPg02tc2mGywreFrs3lilNuDtx4/aDuM8MY9vcHkxJQfLhm64dnLCbI/JeTYHyA5AaTYHyA5AaTYHyA5AaTYJyM5AaToAZIboJQeeEORqOwAJfUgFG6XHaDIHsSK/mvxX2b29DC/z9kXVKiSRQmY39vLJM8/n69BlS4qj/l9fUyi1bG4C1WDqBzz+/uZZa0jugNVi6gs87XWpR8ax/J2VE2iMuYPP16ao+2xrajaRJlW4chA/DPthM2oGqUejLtogE1y+1CkSJEiVNH6AztokNiuhRbbAAAAAElFTkSuQmCC" alt="icono" class="config_list_img">English</a>
+                </li>
+                <li class="config_items">
+                    <a href="#" class="config_link"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACpUlEQVR4nO2Zy2oUQRSGPxWfwJkmRkW8LUQEH8BsvCV7FyLoKwRFouBKEReCD6DoWggSN+6jmSbGkChoRH0E0RhvKyWxpeQMNG13TVVXVZcd8sNhhpnq0/XVqao+dRo2tL41D8yxDpSJhVQCvABm2gySAEtyDxX9VoJ0gdfi/x0wRAtBuq4Qi8BLCalvkEQ2hgWL6bRk0Zd/QGwcpEDPoF2+c4uhIcpCuh13mfrs+l4TxVHpOPjqGI5w4isSOscThf+OA3eBt8B3MfX9DnCs0PZyTIj8aF7MOd4PPM0t8CpTbfbJNYn46MSCKGoE+GwA0TfV9ih6NQ6xB/hkAZGHUddGf9j1NVMDQtlv4Bz/QSSUTjhAjOMHYt5Hhn3fI0Td6ZT5SIPeR4xEWuI/NW1YbPwjEkRV/3o2IL0aIL4hokytkBA2ialW9xpe2MF0MmIkvGu6zZHI6wCw4jkSB4FrwDPgA7AKTNKARiTfcoXYBUyJn/7ArEmGvDlU57cBF2S6KO0GzjtAjAJfS6bplVAAxc5dMmyngxgDfpVAPAnU/9LOuR6KVCS/Vex8p5uC8HE8fazZwocCcfytsaobvPEEcWTAA3VrIA5eCYyvQsHtASDDRFDdQ5EO5AwNq27aMahgkQKbDH1tAR44MDjlTvmMoMrGDX1NyMDUkmsCuGwAsiowVZFRv1+VDOBjDAjbCswscBbYIdcOyxpKC22s5CuLvWkBkhnYDZub+zxPHC4kiC62Jllz4xB9TXkCmYwJgRS0TXavTGMrubUTFGJQNXBUdqc6ED/lVUZwCHI31emUZUU/A75I2TY4hHE1ULQXeCgLVwegNohHwE7Tjiw4RsK4GljQIeC6HKyWZQ2oz+fALdntrDQnb1ldF7bJ1GqFUh/VwA3RYv0Bpa5iWmReMfIAAAAASUVORK5CYII=" alt="icono" class="config_list_img">Modo oscuro</a>
+                </li>
+            </ul>
+            <span class="icono_config">
+                <img src="./images/iconos about/rueda.svg" alt="rueda" id="toggleConfig" class="rueda_config">
+            </span>
+        </div>
+        
+        <section id="inicio" class="info_inicio">
+            <div class="inicio_imagen_container">
+            <img src="./images/iniciogato1.svg" alt="lucas" class="inicio_imagen">
+            </div>
+            <h1 class="info_titulo">¡Hola! Soy Lucas.</h1>
+            <p class="info_paragraph">Full Stack Web Developer | UX/UI Designer</p>
+            <a href="#salto_pagina1" class="cta">Sobre mi</a>
         </section>
     </header>
-
     <main>
-        <section class="container about">
-            <h2 class="subtitle">Modificable1</h2>
-            <p class="about__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio deleniti repudiandae maxime quasi nam aut nemo amet officia quos est.</p>
-
-            <div class="about__main">
-                <article class="about__icons">
-                    <img src="./images/books.svg" class="about__icon" alt="libros">
-                    <h3 class="about__title">Modificable1</h3>
-                    <p class="about__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <section id="salto_pagina1" class="salto_pag1">
+                <span class="salto_pag11"></span>
+        </section>
+        <section id="sobremi" class="about">
+            <div class="flecha_upcontainer">
+                <span class="flecha_up">
+                    <a href="#inicio" class="flecha_up2"><img src="./images/upArrow.svg" alt="flecha" class="flecha_up3"></a>
+                </span>                
+            </div>
+            <h2 class="sobre_mi">Sobre mi</h2>
+            <p class="sobre_mi_paragraph">Dedicado y detallista desarrollador web, con una solida comprension tanto del Front End como del Back End. Enfocado en crear aplicaciones web funcionales y atractivas. Utilizo tecnologias como HTML, CSS, JavaScript, Node.js, React, base de datos PostgreSQL, Express, FireBase, Cloudinary, entre otras.</p>
+            <div class="sobre_mi_iconos">
+                <article class="sobre_mi_icons">
+                    <img src="./images/iconos about/html5.svg" alt="html5" class="sobre_mi_icon">
+                    <!-- <h3 class="about__title">HTML</h3> -->
                 </article>
-                <article class="about__icons">
-                    <img src="./images/books2.svg" class="about__icon" alt="libros2">
-                    <h3 class="about__title">Modificable2</h3>
-                    <p class="about__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <article class="sobre_mi_icons">
+                    <img src="./images/iconos about/css3.svg" alt="html5" class="sobre_mi_icon">
+                    <!-- <h3 class="about__title">CSS3</h3> -->
                 </article>
-                <article class="about__icons">
-                    <img src="./images/books3.svg" class="about__icon" alt="libros">
-                    <h3 class="about__title">Modificable3</h3>
-                    <p class="about__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <article class="sobre_mi_icons">
+                    <img src="./images/iconos about/javascript.svg" alt="html5" class="sobre_mi_icon">
+                    <!-- <h3 class="about__title">HTML</h3> -->
+                </article>
+                <article class="sobre_mi_icons">
+                    <img src="./images/iconos about/node.svg" alt="html5" class="sobre_mi_icon">
+                    <!-- <h3 class="about__title">HTML</h3> -->
+                </article>
+                <article class="sobre_mi_icons">
+                    <img src="./images/iconos about/react.svg" alt="html5" class="sobre_mi_icon">
+                    <!-- <h3 class="about__title">HTML</h3> -->
+                </article>
+                <article class="sobre_mi_icons">
+                    <img src="./images/iconos about/postgres.svg" alt="html5" class="sobre_mi_icon">
+                    <!-- <h3 class="about__title">HTML</h3> -->
+                </article>
+                <article class="sobre_mi_icons">
+                    <img src="./images/iconos about/express.svg" alt="html5" class="sobre_mi_icon">
+                    <!-- <h3 class="about__title">HTML</h3> -->
+                </article>
+                <article class="sobre_mi_icons">
+                    <img src="./images/iconos about/firebase.svg" alt="html5" class="sobre_mi_icon">
+                    <!-- <h3 class="about__title">HTML</h3> -->
+                </article>
+                <article class="sobre_mi_icons">
+                    <img src="./images/iconos about/cloudinary.svg" alt="html5" class="sobre_mi_icon">
+                    <!-- <h3 class="about__title">HTML</h3> -->
                 </article>
             </div>
+            <a href="javascript:void(0)" class="cta" id="certificadosBtn">Certificados</a>
+            <a href="#salto_pagina2" class="cta2">Proyectos</a>
         </section>
-
-        <section class="knowledge">
-            <div class="knowledge__container container">
-                <div class="knowledge__texts">
-                    <h2 class="subtitle">Modificable titulo. Bla Bla Bla. Titulo mas largo prueba</h2>
-                    <p class="knowledge__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim optio dignissimos incidunt consectetur voluptas aliquam quas. Atque id, dignissimos facere repudiandae incidunt eveniet, quidem nam laborum eius maiores sequi commodi?</p>
-                    <a href="#" class="cta">Entra al curso</a>
-                </div>
-
-                <figure class="knowledge__picture">
-                    <img src="./images/notebook.png" class="knowledge__img" alt="notebook">
-                </figure>
-                
+        <div class="popup" id="popup">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <div class="popup-content">
+                <!-- Contenido de la galería de imágenes -->
+                <a href="https://certificates.soyhenry.com/new-cert?id=89b2076026fedf4b5e7d8b922c335d0e07610198ccdf1fe8f2cdce8b3b2c120c" target="_blank"><img src="./images/Certificados/Henry.png" alt="Certificado Henry" class="popup-img"></a>
+                <a href="https://www.efset.org/cert/zNdxfc" target="_blank"><img src="./images/Certificados/EnglishC2.png" alt="Certificado de Inglés" class="popup-img"></a>
+                <!-- Agrega más imágenes aquí -->
             </div>
+        </div>
+        <!-- <section id="skills" class="habilidades">
+            <h2 class="sobre_mi">Habilidades</h2>
+            <p class="sobre_mi_paragraph">Dedicado y detallista desarrollador web, con una solida comprension tanto del Front End como del Back End. Enfocado en crear aplicaciones web funcionales y atractivas. Utilizo tecnologias como HTML, CSS, JavaScript, Node.js, React, base de datos PostgreSQL, Express, FireBase, Cloudinary, entre otras.</p>
+            <a href="#testimony" class="cta">Proyectos</a>
+        </section> -->
+        <section id="salto_pagina2" class="salto_pag2">
+            <span class="salto_pag22"></span>
         </section>
-
-        <section class="price container">
-            <h2 class="subtitle">Modificable Precios</h2>
-            <div class="price__table">
-                <div class="price__element">
-                    <p class="price__name">Flexbox</p>
-                    <h3 class="price__price">Free</h3>
-                    <div class="price__items">
-                        <p class="price__features">Modificar1</p>
-                        <p class="price__features">Modificar2</p>
-                        <p class="price__features">Modificar3</p>
-                    </div>
-                    <a href="#" class="price__cta">Modificar plan1</a>
-                </div>
-                <div class="price__element price__element--best">
-                    <p class="price__name">Grid</p>
-                    <h3 class="price__price">$120</h3>
-                    <div class="price__items">
-                        <p class="price__features">Modificar4</p>
-                        <p class="price__features">Modificar5</p>
-                        <p class="price__features">Modificar6</p>
-                    </div>
-                    <a href="#" class="price__cta">Modificar plan2</a>
-                </div>
-                <div class="price__element">
-                    <p class="price__name">Animaciones</p>
-                    <h3 class="price__price">$200</h3>
-                    <div class="price__items">
-                        <p class="price__features">Modificar7</p>
-                        <p class="price__features">Modificar8</p>
-                        <p class="price__features">Modificar9</p>
-                    </div>
-                    <a href="#" class="price__cta">Modificar plan3</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="testimony">
+        <section id="testimony" class="testimony">
             <div class="testimony__container container">
                 <img src="./images/leftArrow.svg" class="testimony__arrow" id="before" alt="flechaizq">
                 <section class="testimony__body testimony__body--show" data-id="1">
                     <div class="testimony__text">
-                        <h2 class="subtitle">Mi Nombre es Jose Perex, <span class="testimony_course">estudiante de CSS</span></h2>
-                        <p class="testimony__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit itaque dolorum, maxime numquam vitae fuga in. Quasi commodi, magni fuga corporis ratione facere dolorum illo eius tempore eveniet ullam. Animi?</p>
-                    </div>
-                    <figure class="testimony__picture">
-                        <img src="./images/face1.jpg" class="testimony__img" alt="face">
-                    </figure>
-                </section>
-                                <section class="testimony__body" data-id="2">
-                    <div class="testimony__text">
-                        <h2 class="subtitle">Mi Nombre es Annne Hudson, <span class="testimony_course">estudiante de CSS</span></h2>
-                        <p class="testimony__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit itaque dolorum, maxime numquam vitae fuga in.</p>
-                    </div>
-                    <figure class="testimony__picture">
-                        <img src="./images/face2.jpg" class="testimony__img" alt="face">
-                    </figure>
-                </section>
-                                <section class="testimony__body" data-id="3">
-                    <div class="testimony__text">
-                        <h2 class="subtitle">Mi Nombre es Mike Johnson, <span class="testimony_course">estudiante de CSS</span></h2>
-                        <p class="testimony__review">Quasi commodi, magni fuga corporis ratione facere dolorum illo eius tempore eveniet ullam.</p>
+                        <h2 class="subtitle">Proyecto Final: Help Community | E-commerce</h2>
+                        <p class="testimony__review">Aplicación que consiste en comercio electrónico de productos, incluyendo pasarela de pagos, carrito de compras, reviews de productos una vez adquiridos, tablero de administrador para gestión de usuarios, entre otras cosas. Agregamos las siguientes tecnologías: <span class="review_negrita">Cloudinary, Figma, Trello, Mercado Pago, Firebase.</span></p>
+                        <div class="iconos_container">
+                            <a href="https://github.com/LCCaruso/Help-Community" target="_blank"><img src="./images/github.svg" alt="github" class="icono_proyecto"></a>
+                            <a href="https://help-community-five.vercel.app/" target="_blank"><img src="./images/iconos about/globe.svg" alt="mundo" class="icono_proyecto"></a>
+                        </div>
                     </div>
                     <figure class="testimony__picture">
                         <img src="./images/face3.jpg" class="testimony__img" alt="face">
                     </figure>
                 </section>
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__text">
+                        <h2 class="subtitle">Proyecto Individual "Dogs" | SPA</h2>
+                        <p class="testimony__review">El objetivo de este proyecto fue construir una aplicación web a partir de la API externa TheDogApi, utilizando las siguientes tecnologías: <span class="review_negrita">HTML, CSS, JavaScript, React & Redux, Node, Express, Sequelize, PostgreSQL.</span></p>
+                        <div class="iconos_container">
+                            <a href="https://github.com/LCCaruso/PI-Dogs-main" target="_blank"><img src="./images/github.svg" alt="github" class="icono_proyecto"></a>
+                            <a><img src="./images/iconos about/globe.svg" alt="mundo" class="icono_proyecto"></a>
+                        </div>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./images/dogs2.jpg" class="testimony__img" alt="face">
+                    </figure>
+                </section>
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__text">
+                        <h2 class="subtitle">Proyecto Integrador "Rick & Morty" | SPA</h2>
+                        <p class="testimony__review">Aplicación realizada como base práctica del proyecto integrador durante el cursado de los 4 modulos de la carrera.</p>
+                        <div class="iconos_container">
+                            <a href="https://github.com/LCCaruso/integrdor" target="_blank"><img src="./images/github.svg" alt="github" class="icono_proyecto"></a>
+                            <a><img src="./images/iconos about/globe.svg" alt="mundo" class="icono_proyecto"></a>
+                        </div>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./images/face1.jpg" class="testimony__img" alt="face">
+                    </figure>
+                </section>
+
                 <img src="./images/rightArrow.svg" class="testimony__arrow" id="next" alt="flechader">
             </div>
         </section>
-
-        <section class="questions container">
-            <h2 class="subtitle">Preguntas Frecuentes</h2>
-            <p class="questions__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-
-            <section class="questions__container">
-
-                <article class="questions__padding">
-                    <div class="questions__answer">
-                        <h3 class="questions__title">¿Pregunta 1?
-                            <span class="questions__arrow">
-                                <img src="./images/downArrow.svg" class="questions__img" alt="flecha">
-                            </span>
-                        </h3>
-                        <p class="questions__show">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque eius maiores officiis at veritatis accusantium magnam delectus, accusamus, enim dolores beatae ad laborum sit porro ut quidem. Quis, nobis eius?. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque omnis possimus, quas ut cupiditate repudiandae quaerat facere vitae illo! Earum magnam quod hic autem ad expedita cupiditate libero, nobis labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur minima illo fugit earum aut necessitatibus deleniti aliquam vitae. Quisquam tempora doloremque maiores error sit consequatur accusamus eaque asperiores reiciendis obcaecati.</p>
-                    </div>
-                </article>
-
-                <article class="questions__padding">
-                    <div class="questions__answer">
-                        <h3 class="questions__title">¿Pregunta 2?
-                            <span class="questions__arrow">
-                                <img src="./images/downArrow.svg" class="questions__img" alt="flecha">
-                            </span>
-                        </h3>
-                        <p class="questions__show">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque eius maiores officiis at veritatis accusantium magnam delectus, accusamus, enim dolores beatae ad laborum sit porro ut quidem. Quis, nobis eius?. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque omnis possimus, quas ut cupiditate repudiandae quaerat facere vitae illo! Earum magnam quod hic autem ad expedita cupiditate libero.</p>
-                    </div>
-                </article>
-
-                <article class="questions__padding">
-                    <div class="questions__answer">
-                        <h3 class="questions__title">¿Pregunta 3?
-                            <span class="questions__arrow">
-                                <img src="./images/downArrow.svg" class="questions__img" alt="flecha">
-                            </span>
-                        </h3>
-                        <p class="questions__show">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque eius maiores officiis at veritatis accusantium magnam delectus, accusamus, enim dolores beatae ad laborum sit porro ut quidem.</p>
-                    </div>
-                </article>
-
-            </section>
-
-            <section class="questions__offer">
-                <h2 class="subtitle">Modificable dentro de questions</h2>
-                <p class="questions__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, dicta quia. Magni eius, animi earum, quia laboru</p>
-                <a href="#" class="cta">Modificable</a>
-            </section>
+        <section id="cv" class="cv_1">
+            <!-- <h2 class="cv_11">Descarga mi C.V</h2> -->
+            <p class="cv_111">¿Te gustaría saber mas sobre mi? Descarga mi hoja de vida!<a href="./images/Cv/Lucas Caruso Dev. C.V.pdf" download="Lucas Caruso Dev C.V.pdf" class="cta4">Descargar C.V</a></p>
         </section>
-
-    </main>
-
-    <footer class="footer">
-        <section class="footer__container container">
-            <nav class="nav nav--footer">
-                <h2 class="footer__title">Titulo Modificable</h2>
-                <ul class="nav__link nav__link--footer">
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">Inicio</a>
-                    </li>
-    
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">Sobre mi</a>
-                    </li>
-    
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">Contacto</a>
-                    </li>
-    
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">Comentarios</a>
-                    </li>
-                </ul>
-            </nav>
-            <form class="footer__form" action="https://formspree.io/f/mjvnbrwp"
-            method="POST">
-                <h2 class="footer__newsletter">Suscribete!</h2>
-                <div class="footer__inputs">
-                    <input type="email" placeholder="Email:" class="footer__input" name="email">
-                    <input type="submit" value="Registrate" class="footer__submit">
+            <!-- <a href="#contacto" class="cta5">Contacto</a> -->
+            <section id="contact" class="wrapper style4">
+                <div class="form_container">
+                    <header>
+                        <h2 class="sobre_mi">Ponte en contacto conmigo!</h2>
+                        <p>¡Envíame un mensaje!</p>
+                    </header>
+                    <div class="row">
+                        <!-- <div id="templatemo_contact" class="col-md-4 gallery-contact">
+                        </div> -->
+                        <!-- Contenido de la galería de imágenes -->
+                        <div class="col-md-8 templatemo_contactform">
+                            <form action="enviar.php" method="post">
+                                <input type="text" name="name" id="name" class="name" placeholder="NOMBRE">
+                                <input type="text" name="mail" id="mail" class="email" placeholder="CORREO">
+                                <input type="text" name="phone" id="phone" class="phone" placeholder="TELÉFONO">
+                                <textarea name="message" class="message" placeholder="MENSAJE..."></textarea>
+                                <button type="submit" class="btn btn-primary">ENVIAR</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </form>
-        </section>
-        <section class="footer__copy container">
-            <div class="footer__social">
-                <a href="#" class="footer__icons"><img src="./images/facebook.svg" alt="facebook" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="./images/github.svg" alt="github" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="./images/instagram.svg" alt="instagram" class="footer__img"></a>
+            </section>
+                <div class="col-12">
+                    <!-- <hr /> -->
+                    <h3>Find me on ...</h3>
+                    <ul class="social">
+                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+                        <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+                        <li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+                        <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                        <!--
+                        <li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
+                        <li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
+                        <li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
+                        <li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
+                        <li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
+                        <li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
+                        <li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
+                        <li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
+                        <li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
+                        -->
+                    </ul>
+                    <hr />
+                </div>
             </div>
-            <h3 class="footer__copyright">Derechos reservados &copy; Dev LucasC</h3>
-        </section>
-    </footer>
-
-    <script src="./js/slider.js"></script>
-    <script src="./js/questions.js"></script>
+            <footer>
+                <ul id="copyright">
+                    <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </footer>
+            <!-- <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img" alt="menu">
+            </div> -->
+            <!-- <div class="footer_icons">
+                <a href="#linkedin" class="footer_icon"><img src="./images/linkedin.svg" alt="linkedin" class="footer_image"></a>
+                <a href="#facebook" class="footer_icon"><img src="./images/facebook.svg" alt="facebook" class="footer_image"></a>
+                <a href="#github" class="footer_icon"><img src="./images/github.svg" alt="github" class="footer_image"></a>
+                <a href="#instagram" class="footer_icon"><img src="./images/instagram.svg" alt="instagram" class="footer_image"></a>   
+                <h3 class="footer__copyright">Derechos Reservados &copy; LukerDev 2024</h3>
+            </div>
+            <div class="lukerweb">
+                <h2 class="luker">LUKER</h1>
+                <h2 class="web">DEV</h2>
+            </div> -->
+    </main>
     <script src="./js/menu.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/iconos.js"></script>
+    <script src="./js/flechaup.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/smooth.js"></script>
+    <script src="./js/certificados.js"></script>
 </body>
 </html>
