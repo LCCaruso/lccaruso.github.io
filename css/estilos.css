@@ -37,7 +37,7 @@ body::before {
     opacity: 1; 
     /* Ajusta la opacidad según sea necesario */
     pointer-events: none;
-    /* animation: moveBackground 1800s linear infinite alternate;  */
+    animation: moveBackground 1800s linear infinite alternate; 
     /* Define la animación */
 }
 
