@@ -37,7 +37,7 @@ body::before {
     opacity: 1; 
     /* Ajusta la opacidad según sea necesario */
     pointer-events: none;
-    animation: moveBackground 1800s linear infinite alternate; 
+    /* animation: moveBackground 1800s linear infinite alternate;  */
     /* Define la animación */
 }
 
@@ -594,7 +594,7 @@ body::before {
 .testimony__img{
     width: 250px;
     height: 250px;
-    border-radius: 2%;
+    border-radius: 50%;
     object-fit: cover;
     object-position: 50% 20%;
     margin-left: 1em;
@@ -604,7 +604,7 @@ body::before {
 .testimony__text{
     max-width: 700px;
     color: rgb(121, 120, 120);
-    font-size: 20px;
+    font-size: 22px;
     text-align: justify;
 }
 
