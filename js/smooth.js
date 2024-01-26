@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const links = document.querySelectorAll('.nav_links, .cta, .cta2, .flecha_up2');
+    const links = document.querySelectorAll('.nav_links, .cta, .cta2, .flecha_up2, .footer_link');
 
     links.forEach(link => {
         link.addEventListener("click", function(event) {

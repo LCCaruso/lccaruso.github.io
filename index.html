@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +7,12 @@
     <meta name="description" content="Portfolio realizado por Lucas Caruso, contiene algunos de mis proyectos, habilidades y tecnologías." />
     <link rel="shortcut icon" href="./images/batmanfavicon1.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/estilos.css">
-    <title>L.C Portfolio</title>
+    <title>Bienvenido</title>
+    <script src="https://kit.fontawesome.com/087f3f1be9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="inicio">
-
         <nav class="nav_container">
             <ul class="nav_link">
                 <li class="nav_items">
@@ -21,9 +21,6 @@
                 <li class="nav_items">
                     <a href="#salto_pagina1" class="nav_links"><img src="./images/iconos about/about.svg" alt="about" class="nav_list_img">Sobre mi</a>
                 </li>
-                <!-- <li class="nav_items">
-                    <a href="#skills" class="nav_links"><img src="./images/iconos about/skills.svg" alt="skills" class="nav_list_img">Skills</a>
-                </li> -->
                 <li class="nav_items">
                     <a href="#salto_pagina2" class="nav_links"><img src="./images/iconos about/rocket.svg" alt="projects" class="nav_list_img">Proyectos</a>
                 </li>
@@ -40,24 +37,18 @@
         </nav>
         <div class="config_container">
             <ul class="config_links">
-                <li class="config_items">
-                    <a href="#" class="config_link"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC6ElEQVR4nO2Yb2gSYRzHHyJ6Eb3qfS+uV70MerFe9aIXriB602K2RkG9qhcjrbVm5a2iNgpjM3ChbLRZsdpi6Gq4/sxFC605lbQcaYORMtZmtzUcuJBf3KN3ifPK03s8hfvCD+6ee/P93H2/dz4ipEiRIkUVKdq5sK1+KO7ebWFSlGkVCp0x/yz4ZiJSTcwbCncEg8EtogHUg3GXGOPcGJxRKQGAHRZCNIDYO8/N6eFFyQF8M+F50QDFmGenpneFAEAEygZAoAdQdgASPUDlBCDRA1ROADE9qGvS4SkrgGogAZzY41J6UCcHQOdUkgdgjwvtAWe20PGRAvj6M8UDRJhUwT2oCABVJj4sRDgDUpsnRmK/Bz1DI9j0yZYb4A6EyEWIi889TxIPqy6BGAn14LV7GloN9+HhyFj63OWBY1o9Bui3Och2gIvPoacJPKy+CcRI6HvA3e3jzW0w+s4NZ6/dwecsFNESc/H5/isFOzNrcytpoANPEgV/D7yhMFzpNGPTak36zp/S3YRJb5AsABcfi3+dXzP71vGa0ZMU1YMPn77AiYvX+cI+GB4l/xrNfvvkSihG+XrAlrTFYMLGjzZdTj8JrZ7vBBGA7I+XkA7miVFuD8Y/euEMfRubrtdehUcvXsEts5V/EnqjBd77gtIDcPGxBv7Gh5u+QDpG7Fvpfz3Q3e3GRhub28A2PsmvsxFquEDja5r2LukBuPg02tc2mGywreFrs3lilNuDtx4/aDuM8MY9vcHkxJQfLhm64dnLCbI/JeTYHyA5AaTYHyA5AaTYHyA5AaTYJyM5AaToAZIboJQeeEORqOwAJfUgFG6XHaDIHsSK/mvxX2b29DC/z9kXVKiSRQmY39vLJM8/n69BlS4qj/l9fUyi1bG4C1WDqBzz+/uZZa0jugNVi6gs87XWpR8ax/J2VE2iMuYPP16ao+2xrajaRJlW4chA/DPthM2oGqUejLtogE1y+1CkSJEiVNH6AztokNiuhRbbAAAAAElFTkSuQmCC" alt="icono" class="config_list_img">English</a>
-                </li>
-                <li class="config_items">
-                    <a href="#" class="config_link"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACpUlEQVR4nO2Zy2oUQRSGPxWfwJkmRkW8LUQEH8BsvCV7FyLoKwRFouBKEReCD6DoWggSN+6jmSbGkChoRH0E0RhvKyWxpeQMNG13TVVXVZcd8sNhhpnq0/XVqao+dRo2tL41D8yxDpSJhVQCvABm2gySAEtyDxX9VoJ0gdfi/x0wRAtBuq4Qi8BLCalvkEQ2hgWL6bRk0Zd/QGwcpEDPoF2+c4uhIcpCuh13mfrs+l4TxVHpOPjqGI5w4isSOscThf+OA3eBt8B3MfX9DnCs0PZyTIj8aF7MOd4PPM0t8CpTbfbJNYn46MSCKGoE+GwA0TfV9ih6NQ6xB/hkAZGHUddGf9j1NVMDQtlv4Bz/QSSUTjhAjOMHYt5Hhn3fI0Td6ZT5SIPeR4xEWuI/NW1YbPwjEkRV/3o2IL0aIL4hokytkBA2ialW9xpe2MF0MmIkvGu6zZHI6wCw4jkSB4FrwDPgA7AKTNKARiTfcoXYBUyJn/7ArEmGvDlU57cBF2S6KO0GzjtAjAJfS6bplVAAxc5dMmyngxgDfpVAPAnU/9LOuR6KVCS/Vex8p5uC8HE8fazZwocCcfytsaobvPEEcWTAA3VrIA5eCYyvQsHtASDDRFDdQ5EO5AwNq27aMahgkQKbDH1tAR44MDjlTvmMoMrGDX1NyMDUkmsCuGwAsiowVZFRv1+VDOBjDAjbCswscBbYIdcOyxpKC22s5CuLvWkBkhnYDZub+zxPHC4kiC62Jllz4xB9TXkCmYwJgRS0TXavTGMrubUTFGJQNXBUdqc6ED/lVUZwCHI31emUZUU/A75I2TY4hHE1ULQXeCgLVwegNohHwE7Tjiw4RsK4GljQIeC6HKyWZQ2oz+fALdntrDQnb1ldF7bJ1GqFUh/VwA3RYv0Bpa5iWmReMfIAAAAASUVORK5CYII=" alt="icono" class="config_list_img">Modo oscuro</a>
+                <button class="switch" id="switch">
+                    <span><i class="fa-regular fa-sun"></i></span>
+                    <span><i class="fa-solid fa-moon"></i></span>
+                </button>
+                <li>
+                    <a href="./en/index.html" class="config_link"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC6ElEQVR4nO2Yb2gSYRzHHyJ6Eb3qfS+uV70MerFe9aIXriB602K2RkG9qhcjrbVm5a2iNgpjM3ChbLRZsdpi6Gq4/sxFC605lbQcaYORMtZmtzUcuJBf3KN3ifPK03s8hfvCD+6ee/P93H2/dz4ipEiRIkUVKdq5sK1+KO7ebWFSlGkVCp0x/yz4ZiJSTcwbCncEg8EtogHUg3GXGOPcGJxRKQGAHRZCNIDYO8/N6eFFyQF8M+F50QDFmGenpneFAEAEygZAoAdQdgASPUDlBCDRA1ROADE9qGvS4SkrgGogAZzY41J6UCcHQOdUkgdgjwvtAWe20PGRAvj6M8UDRJhUwT2oCABVJj4sRDgDUpsnRmK/Bz1DI9j0yZYb4A6EyEWIi889TxIPqy6BGAn14LV7GloN9+HhyFj63OWBY1o9Bui3Och2gIvPoacJPKy+CcRI6HvA3e3jzW0w+s4NZ6/dwecsFNESc/H5/isFOzNrcytpoANPEgV/D7yhMFzpNGPTak36zp/S3YRJb5AsABcfi3+dXzP71vGa0ZMU1YMPn77AiYvX+cI+GB4l/xrNfvvkSihG+XrAlrTFYMLGjzZdTj8JrZ7vBBGA7I+XkA7miVFuD8Y/euEMfRubrtdehUcvXsEts5V/EnqjBd77gtIDcPGxBv7Gh5u+QDpG7Fvpfz3Q3e3GRhub28A2PsmvsxFquEDja5r2LukBuPg02tc2mGywreFrs3lilNuDtx4/aDuM8MY9vcHkxJQfLhm64dnLCbI/JeTYHyA5AaTYHyA5AaTYHyA5AaTYJyM5AaToAZIboJQeeEORqOwAJfUgFG6XHaDIHsSK/mvxX2b29DC/z9kXVKiSRQmY39vLJM8/n69BlS4qj/l9fUyi1bG4C1WDqBzz+/uZZa0jugNVi6gs87XWpR8ax/J2VE2iMuYPP16ao+2xrajaRJlW4chA/DPthM2oGqUejLtogE1y+1CkSJEiVNH6AztokNiuhRbbAAAAAElFTkSuQmCC" alt="icono" class="config_list_img">En</a>
                 </li>
             </ul>
-            <span class="icono_config">
-                <img src="./images/iconos about/rueda.svg" alt="rueda" id="toggleConfig" class="rueda_config">
-            </span>
         </div>
-        
         <section id="inicio" class="info_inicio">
-            <div class="inicio_imagen_container">
-            <img src="./images/iniciogato1.svg" alt="lucas" class="inicio_imagen">
-            </div>
             <h1 class="info_titulo">¡Hola! Soy Lucas.</h1>
-            <p class="info_paragraph">Full Stack Web Developer | UX/UI Designer</p>
+            <p class="info_paragraph">Desarrollador Web Full Stack | Diseñador UX/UI</p>
             <a href="#salto_pagina1" class="cta">Sobre mi</a>
         </section>
     </header>
@@ -73,70 +64,60 @@
             </div>
             <h2 class="sobre_mi">Sobre mi</h2>
             <p class="sobre_mi_paragraph">Dedicado y detallista desarrollador web, con una solida comprension tanto del Front End como del Back End. Enfocado en crear aplicaciones web funcionales y atractivas. Utilizo tecnologias como HTML, CSS, JavaScript, Node.js, React, base de datos PostgreSQL, Express, FireBase, Cloudinary, entre otras.</p>
-            <div class="sobre_mi_iconos">
-                <article class="sobre_mi_icons">
-                    <img src="./images/iconos about/html5.svg" alt="html5" class="sobre_mi_icon">
-                    <!-- <h3 class="about__title">HTML</h3> -->
-                </article>
-                <article class="sobre_mi_icons">
-                    <img src="./images/iconos about/css3.svg" alt="html5" class="sobre_mi_icon">
-                    <!-- <h3 class="about__title">CSS3</h3> -->
-                </article>
-                <article class="sobre_mi_icons">
-                    <img src="./images/iconos about/javascript.svg" alt="html5" class="sobre_mi_icon">
-                    <!-- <h3 class="about__title">HTML</h3> -->
-                </article>
-                <article class="sobre_mi_icons">
-                    <img src="./images/iconos about/node.svg" alt="html5" class="sobre_mi_icon">
-                    <!-- <h3 class="about__title">HTML</h3> -->
-                </article>
-                <article class="sobre_mi_icons">
-                    <img src="./images/iconos about/react.svg" alt="html5" class="sobre_mi_icon">
-                    <!-- <h3 class="about__title">HTML</h3> -->
-                </article>
-                <article class="sobre_mi_icons">
-                    <img src="./images/iconos about/postgres.svg" alt="html5" class="sobre_mi_icon">
-                    <!-- <h3 class="about__title">HTML</h3> -->
-                </article>
-                <article class="sobre_mi_icons">
-                    <img src="./images/iconos about/express.svg" alt="html5" class="sobre_mi_icon">
-                    <!-- <h3 class="about__title">HTML</h3> -->
-                </article>
-                <article class="sobre_mi_icons">
-                    <img src="./images/iconos about/firebase.svg" alt="html5" class="sobre_mi_icon">
-                    <!-- <h3 class="about__title">HTML</h3> -->
-                </article>
-                <article class="sobre_mi_icons">
-                    <img src="./images/iconos about/cloudinary.svg" alt="html5" class="sobre_mi_icon">
-                    <!-- <h3 class="about__title">HTML</h3> -->
-                </article>
+            <div class="iconos_subcontainer">
+                <div class="sobre_mi_iconos">
+                    <article class="sobre_mi_icons">
+                        <img src="./images/iconos about/html5.svg" alt="html5" class="sobre_mi_icon">
+                    </article>
+                    <article class="sobre_mi_icons">
+                        <img src="./images/iconos about/css3.svg" alt="html5" class="sobre_mi_icon">
+                    </article>
+                    <article class="sobre_mi_icons">
+                        <img src="./images/iconos about/javascript.svg" alt="html5" class="sobre_mi_icon">
+                    </article>
+                    <article class="sobre_mi_icons">
+                        <img src="./images/iconos about/node.svg" alt="html5" class="sobre_mi_icon">
+                    </article>
+                    <article class="sobre_mi_icons">
+                        <img src="./images/iconos about/react.svg" alt="html5" class="sobre_mi_icon">
+                    </article>
+                    <article class="sobre_mi_icons">
+                        <img src="./images/iconos about/postgres.svg" alt="html5" class="sobre_mi_icon">
+                    </article>
+                    <article class="sobre_mi_icons">
+                        <img src="./images/iconos about/express.svg" alt="html5" class="sobre_mi_icon">
+                    </article>
+                    <article class="sobre_mi_icons">
+                        <img src="./images/iconos about/firebase.svg" alt="html5" class="sobre_mi_icon">
+                    </article>
+                    <article class="sobre_mi_icons">
+                        <img src="./images/iconos about/cloudinary.svg" alt="html5" class="sobre_mi_icon">
+                    </article>
+                </div>
+                <a href="javascript:void(0)" class="cta" id="certificadosBtn">Certificados</a>
+                <a href="#salto_pagina2" class="cta2">Proyectos</a>
             </div>
-            <a href="javascript:void(0)" class="cta" id="certificadosBtn">Certificados</a>
-            <a href="#salto_pagina2" class="cta2">Proyectos</a>
+            <div class="inicio_imagen_container">
+                <img src="./images/iniciogato1.svg" alt="lucas" class="inicio_imagen">
+            </div>
         </section>
         <div class="popup" id="popup">
             <span class="close-btn" id="closeBtn">&times;</span>
             <div class="popup-content">
-                <!-- Contenido de la galería de imágenes -->
                 <a href="https://certificates.soyhenry.com/new-cert?id=89b2076026fedf4b5e7d8b922c335d0e07610198ccdf1fe8f2cdce8b3b2c120c" target="_blank"><img src="./images/Certificados/Henry.png" alt="Certificado Henry" class="popup-img"></a>
                 <a href="https://www.efset.org/cert/zNdxfc" target="_blank"><img src="./images/Certificados/EnglishC2.png" alt="Certificado de Inglés" class="popup-img"></a>
-                <!-- Agrega más imágenes aquí -->
             </div>
         </div>
-        <!-- <section id="skills" class="habilidades">
-            <h2 class="sobre_mi">Habilidades</h2>
-            <p class="sobre_mi_paragraph">Dedicado y detallista desarrollador web, con una solida comprension tanto del Front End como del Back End. Enfocado en crear aplicaciones web funcionales y atractivas. Utilizo tecnologias como HTML, CSS, JavaScript, Node.js, React, base de datos PostgreSQL, Express, FireBase, Cloudinary, entre otras.</p>
-            <a href="#testimony" class="cta">Proyectos</a>
-        </section> -->
         <section id="salto_pagina2" class="salto_pag2">
             <span class="salto_pag22"></span>
         </section>
         <section id="testimony" class="testimony">
+            <hr class="linea"/>
             <div class="testimony__container container">
                 <img src="./images/leftArrow.svg" class="testimony__arrow" id="before" alt="flechaizq">
                 <section class="testimony__body testimony__body--show" data-id="1">
                     <div class="testimony__text">
-                        <h2 class="subtitle">Proyecto Final: Help Community | E-commerce</h2>
+                        <h2 class="subtitle">Proyecto Final: "Help Community" | E-commerce</h2>
                         <p class="testimony__review">Aplicación que consiste en comercio electrónico de productos, incluyendo pasarela de pagos, carrito de compras, reviews de productos, tablero de administrador para gestión de usuarios, entre otras funcionalidades. Algunas de las tecnologías utilizadas: <span class="review_negrita">Cloudinary, Figma, Trello, Mercado Pago, Firebase.</span></p>
                         <div class="iconos_container">
                             <a href="https://github.com/LCCaruso/Help-Community" target="_blank"><img src="./images/github.svg" alt="github" class="icono_proyecto"></a>
@@ -149,7 +130,7 @@
                 </section>
                 <section class="testimony__body" data-id="2">
                     <div class="testimony__text">
-                        <h2 class="subtitle">Proyecto Individual "Dogs" | SPA</h2>
+                        <h2 class="subtitle">Proyecto Individual: "Dogs" | SPA</h2>
                         <p class="testimony__review">El objetivo de este proyecto fue construir una aplicación web a partir de la API externa TheDogApi, utilizando las siguientes tecnologías: <span class="review_negrita">HTML, CSS, JavaScript, React & Redux, Node, Express, Sequelize, PostgreSQL.</span></p>
                         <div class="iconos_container">
                             <a href="https://github.com/LCCaruso/PI-Dogs-main" target="_blank"><img src="./images/github.svg" alt="github" class="icono_proyecto"></a>
@@ -162,7 +143,7 @@
                 </section>
                 <section class="testimony__body" data-id="3">
                     <div class="testimony__text">
-                        <h2 class="subtitle">Proyecto Integrador "Rick & Morty" | SPA</h2>
+                        <h2 class="subtitle">Proyecto Integrador: "Rick & Morty" | SPA</h2>
                         <p class="testimony__review">Aplicación realizada como base práctica del proyecto integrador durante el cursado de los 4 modulos de la carrera.</p>
                         <div class="iconos_container">
                             <a href="https://github.com/LCCaruso/integrdor" target="_blank"><img src="./images/github.svg" alt="github" class="icono_proyecto"></a>
@@ -173,82 +154,56 @@
                         <img src="./images/rick.png" class="testimony__img" alt="face">
                     </figure>
                 </section>
-
                 <img src="./images/rightArrow.svg" class="testimony__arrow" id="next" alt="flechader">
             </div>
+            <hr class="linea"/>
         </section>
         <section id="cv" class="cv_1">
-            <!-- <h2 class="cv_11">Descarga mi C.V</h2> -->
-            <p class="cv_111">¿Te gustaría saber mas sobre mi? Descarga mi hoja de vida!<a href="./images/Cv/Lucas Caruso Dev. C.V.pdf" download="Lucas Caruso Dev C.V.pdf" class="cta4">Descargar C.V</a></p>
+            <p class="cv_111">¿Te gustaría saber más sobre mi? ¡Descarga mi hoja de vida!<a href="./images/Cv/Lucas Caruso Dev. C.V.pdf" download="Lucas Caruso Dev C.V.pdf" class="cta4">Descargar C.V</a></p>
         </section>
-            <!-- <a href="#contacto" class="cta5">Contacto</a> -->
-            <section id="contact" class="wrapper style4">
-                <div class="form_container">
-                    <header>
-                        <h2 class="sobre_mi">Ponte en contacto conmigo!</h2>
-                        <p>¡Envíame un mensaje!</p>
-                    </header>
-                    <div class="row">
-                        <!-- <div id="templatemo_contact" class="col-md-4 gallery-contact">
-                        </div> -->
-                        <!-- Contenido de la galería de imágenes -->
-                        <div class="col-md-8 templatemo_contactform">
-                            <form action="enviar.php" method="post">
-                                <input type="text" name="name" id="name" class="name" placeholder="NOMBRE">
-                                <input type="text" name="mail" id="mail" class="email" placeholder="CORREO">
-                                <input type="text" name="phone" id="phone" class="phone" placeholder="TELÉFONO">
-                                <textarea name="message" class="message" placeholder="MENSAJE..."></textarea>
-                                <button type="submit" class="btn btn-primary">ENVIAR</button>
-                            </form>
+        <section id="contact" class="wrapper">
+            <span class="span_contacto">¿Te interesa contactarme? ¡Envíame un mensaje!</span>
+                <div class="formulario-container">
+                    <form action="https://formsubmit.co/lucas.caruso27@gmail.com" method="POST" class="form">
+                        <div class="inputs">
+                            <input type="text" id="name" name="Nombre" required placeholder="Nombre">
+                            <input type="email" id="email" name="Email" required placeholder="Correo electrónico" class="email_">
                         </div>
-                    </div>
+                        <div class="inputs2">
+                            <input type="text" id="asunto" name="Asunto" required placeholder="Asunto">
+                            <textarea id="message" name="Mensaje" rows="4" required placeholder="Escribe aquí tu mensaje..." class="text_area"></textarea>
+                        </div>
+                      <input class="btn" type="submit" value="Enviar">
+                    </form>
                 </div>
             </section>
-                <div class="col-12">
-                    <!-- <hr /> -->
-                    <h3>Find me on ...</h3>
-                    <ul class="social">
-                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                        <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-                        <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                        <li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-                        <li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
-                        <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                        <!--
-                        <li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-                        <li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-                        <li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-                        <li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-                        <li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-                        <li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-                        <li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-                        <li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-                        <li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-                        -->
-                    </ul>
-                    <hr />
-                </div>
-            </div>
             <footer>
-                <ul id="copyright">
-                    <li>&copy; Bla Bla...</li><li>Diseño: <a href="#">LCCaruso</a></li>
-                </ul>
+                <div class="footer_container">
+                    <div class="footer_secciones_iconos">
+                        <div class="footer_secciones">
+                        <h3 class="subti_footer">SECCIONES</h3>
+                            <div class="footer_links">
+                                <a href="#inicio" class="footer_link">Inicio</a>
+                                <a href="#salto_pagina1" class="footer_link">Sobre mi</a>
+                                <a href="#salto_pagina2" class="footer_link">Proyectos</a>
+                                <a href="#cv" class="footer_link">C.V</a>
+                                <a href="#contact" class="footer_link">Contacto</a>
+                            </div>
+                        </div>
+                        <div class="footer_iconos">
+                        <h3 class="subti_footer">REDES SOCIALES</h3>
+                            <div class="footer_icons">
+                                <a href="#linkedin" class="footer_icon"><img src="./images/linkedin.svg" alt="linkedin" class="footer_image"></a>
+                                <a href="#facebook" class="footer_icon"><img src="./images/facebook.svg" alt="facebook" class="footer_image"></a>
+                                <a href="#github" class="footer_icon"><img src="./images/github.svg" alt="github" class="footer_image"></a>
+                                <a href="#instagram" class="footer_icon"><img src="./images/instagram.svg" alt="instagram" class="footer_image"></a>   
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <h3 class="footer_año">© Lucas Caruso | 2024</h3>
+                </div>
             </footer>
-            <!-- <div class="nav__menu">
-                <img src="./images/menu.svg" class="nav__img" alt="menu">
-            </div> -->
-            <!-- <div class="footer_icons">
-                <a href="#linkedin" class="footer_icon"><img src="./images/linkedin.svg" alt="linkedin" class="footer_image"></a>
-                <a href="#facebook" class="footer_icon"><img src="./images/facebook.svg" alt="facebook" class="footer_image"></a>
-                <a href="#github" class="footer_icon"><img src="./images/github.svg" alt="github" class="footer_image"></a>
-                <a href="#instagram" class="footer_icon"><img src="./images/instagram.svg" alt="instagram" class="footer_image"></a>   
-                <h3 class="footer__copyright">Derechos Reservados &copy; LukerDev 2024</h3>
-            </div>
-            <div class="lukerweb">
-                <h2 class="luker">LUKER</h1>
-                <h2 class="web">DEV</h2>
-            </div> -->
     </main>
     <script src="./js/menu.js"></script>
     <script src="./js/config.js"></script>
@@ -257,5 +212,7 @@
     <script src="./js/slider.js"></script>
     <script src="./js/smooth.js"></script>
     <script src="./js/certificados.js"></script>
+    <script src="./js/parallax.js"></script>
+    <script src="./js/dark.js"></script>
 </body>
 </html>
