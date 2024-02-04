@@ -8,7 +8,9 @@
     <link rel="shortcut icon" href="../images/batmanfavicon1.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Welcome</title>
+    <script src="https://kit.fontawesome.com/087f3f1be9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header class="inicio">
@@ -31,21 +33,20 @@
                 </li>
             </ul>
             <span class="flechas_menu">
-                <img src="../images/iconos about/menu.svg" alt="flecha" id="toggleMenu" class="flecha_menu">
+                <!-- <img src="./images/iconos about/menu2.svg" alt="flecha" id="toggleMenu" class="flecha_menu"> -->
+                <i class="fa-solid fa-bars" id="toggleMenu"></i>
             </span>
         </nav>
         <div class="config_container">
             <ul class="config_links">
-                <li class="config_items">
-                    <a href="../index.html" class="config_link"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC6ElEQVR4nO2Yb2gSYRzHHyJ6Eb3qfS+uV70MerFe9aIXriB602K2RkG9qhcjrbVm5a2iNgpjM3ChbLRZsdpi6Gq4/sxFC605lbQcaYORMtZmtzUcuJBf3KN3ifPK03s8hfvCD+6ee/P93H2/dz4ipEiRIkUVKdq5sK1+KO7ebWFSlGkVCp0x/yz4ZiJSTcwbCncEg8EtogHUg3GXGOPcGJxRKQGAHRZCNIDYO8/N6eFFyQF8M+F50QDFmGenpneFAEAEygZAoAdQdgASPUDlBCDRA1ROADE9qGvS4SkrgGogAZzY41J6UCcHQOdUkgdgjwvtAWe20PGRAvj6M8UDRJhUwT2oCABVJj4sRDgDUpsnRmK/Bz1DI9j0yZYb4A6EyEWIi889TxIPqy6BGAn14LV7GloN9+HhyFj63OWBY1o9Bui3Och2gIvPoacJPKy+CcRI6HvA3e3jzW0w+s4NZ6/dwecsFNESc/H5/isFOzNrcytpoANPEgV/D7yhMFzpNGPTak36zp/S3YRJb5AsABcfi3+dXzP71vGa0ZMU1YMPn77AiYvX+cI+GB4l/xrNfvvkSihG+XrAlrTFYMLGjzZdTj8JrZ7vBBGA7I+XkA7miVFuD8Y/euEMfRubrtdehUcvXsEts5V/EnqjBd77gtIDcPGxBv7Gh5u+QDpG7Fvpfz3Q3e3GRhub28A2PsmvsxFquEDja5r2LukBuPg02tc2mGywreFrs3lilNuDtx4/aDuM8MY9vcHkxJQfLhm64dnLCbI/JeTYHyA5AaTYHyA5AaTYHyA5AaTYJyM5AaToAZIboJQeeEORqOwAJfUgFG6XHaDIHsSK/mvxX2b29DC/z9kXVKiSRQmY39vLJM8/n69BlS4qj/l9fUyi1bG4C1WDqBzz+/uZZa0jugNVi6gs87XWpR8ax/J2VE2iMuYPP16ao+2xrajaRJlW4chA/DPthM2oGqUejLtogE1y+1CkSJEiVNH6AztokNiuhRbbAAAAAElFTkSuQmCC" alt="icono" class="config_list_img">Español</a>
-                </li>
-                <li class="config_items">
-                    <a href="#" class="config_link"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACpUlEQVR4nO2Zy2oUQRSGPxWfwJkmRkW8LUQEH8BsvCV7FyLoKwRFouBKEReCD6DoWggSN+6jmSbGkChoRH0E0RhvKyWxpeQMNG13TVVXVZcd8sNhhpnq0/XVqao+dRo2tL41D8yxDpSJhVQCvABm2gySAEtyDxX9VoJ0gdfi/x0wRAtBuq4Qi8BLCalvkEQ2hgWL6bRk0Zd/QGwcpEDPoF2+c4uhIcpCuh13mfrs+l4TxVHpOPjqGI5w4isSOscThf+OA3eBt8B3MfX9DnCs0PZyTIj8aF7MOd4PPM0t8CpTbfbJNYn46MSCKGoE+GwA0TfV9ih6NQ6xB/hkAZGHUddGf9j1NVMDQtlv4Bz/QSSUTjhAjOMHYt5Hhn3fI0Td6ZT5SIPeR4xEWuI/NW1YbPwjEkRV/3o2IL0aIL4hokytkBA2ialW9xpe2MF0MmIkvGu6zZHI6wCw4jkSB4FrwDPgA7AKTNKARiTfcoXYBUyJn/7ArEmGvDlU57cBF2S6KO0GzjtAjAJfS6bplVAAxc5dMmyngxgDfpVAPAnU/9LOuR6KVCS/Vex8p5uC8HE8fazZwocCcfytsaobvPEEcWTAA3VrIA5eCYyvQsHtASDDRFDdQ5EO5AwNq27aMahgkQKbDH1tAR44MDjlTvmMoMrGDX1NyMDUkmsCuGwAsiowVZFRv1+VDOBjDAjbCswscBbYIdcOyxpKC22s5CuLvWkBkhnYDZub+zxPHC4kiC62Jllz4xB9TXkCmYwJgRS0TXavTGMrubUTFGJQNXBUdqc6ED/lVUZwCHI31emUZUU/A75I2TY4hHE1ULQXeCgLVwegNohHwE7Tjiw4RsK4GljQIeC6HKyWZQ2oz+fALdntrDQnb1ldF7bJ1GqFUh/VwA3RYv0Bpa5iWmReMfIAAAAASUVORK5CYII=" alt="icono" class="config_list_img">Dark mode</a>
+                <button class="switch" id="switch">
+                    <span><i class="fa-regular fa-sun"></i></span>
+                    <span><i class="fa-solid fa-moon"></i></span>
+                </button>
+                <li>
+                    <a href="../index.html" class="config_link"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC6ElEQVR4nO2Yb2gSYRzHHyJ6Eb3qfS+uV70MerFe9aIXriB602K2RkG9qhcjrbVm5a2iNgpjM3ChbLRZsdpi6Gq4/sxFC605lbQcaYORMtZmtzUcuJBf3KN3ifPK03s8hfvCD+6ee/P93H2/dz4ipEiRIkUVKdq5sK1+KO7ebWFSlGkVCp0x/yz4ZiJSTcwbCncEg8EtogHUg3GXGOPcGJxRKQGAHRZCNIDYO8/N6eFFyQF8M+F50QDFmGenpneFAEAEygZAoAdQdgASPUDlBCDRA1ROADE9qGvS4SkrgGogAZzY41J6UCcHQOdUkgdgjwvtAWe20PGRAvj6M8UDRJhUwT2oCABVJj4sRDgDUpsnRmK/Bz1DI9j0yZYb4A6EyEWIi889TxIPqy6BGAn14LV7GloN9+HhyFj63OWBY1o9Bui3Och2gIvPoacJPKy+CcRI6HvA3e3jzW0w+s4NZ6/dwecsFNESc/H5/isFOzNrcytpoANPEgV/D7yhMFzpNGPTak36zp/S3YRJb5AsABcfi3+dXzP71vGa0ZMU1YMPn77AiYvX+cI+GB4l/xrNfvvkSihG+XrAlrTFYMLGjzZdTj8JrZ7vBBGA7I+XkA7miVFuD8Y/euEMfRubrtdehUcvXsEts5V/EnqjBd77gtIDcPGxBv7Gh5u+QDpG7Fvpfz3Q3e3GRhub28A2PsmvsxFquEDja5r2LukBuPg02tc2mGywreFrs3lilNuDtx4/aDuM8MY9vcHkxJQfLhm64dnLCbI/JeTYHyA5AaTYHyA5AaTYHyA5AaTYJyM5AaToAZIboJQeeEORqOwAJfUgFG6XHaDIHsSK/mvxX2b29DC/z9kXVKiSRQmY39vLJM8/n69BlS4qj/l9fUyi1bG4C1WDqBzz+/uZZa0jugNVi6gs87XWpR8ax/J2VE2iMuYPP16ao+2xrajaRJlW4chA/DPthM2oGqUejLtogE1y+1CkSJEiVNH6AztokNiuhRbbAAAAAElFTkSuQmCC" alt="icono" class="config_list_img">Es</a>
                 </li>
             </ul>
-            <span class="icono_config">
-                <img src="../images/iconos about/rueda.svg" alt="rueda" id="toggleConfig" class="rueda_config">
-            </span>
         </div>
         <section id="inicio" class="info_inicio">
             <h1 class="info_titulo">¡Hello! I'm Lucas.</h1>
@@ -95,19 +96,20 @@
                         <img src="../images/iconos about/cloudinary.svg" alt="html5" class="sobre_mi_icon">
                     </article>
                 </div>
-                <a href="javascript:void(0)" class="cta" id="certificadosBtn">Certificates</a>
+                <a href="#" class="cta" id="certificadosBtn">Certificates</a>
                 <a href="#salto_pagina2" class="cta2">Projects</a>
             </div>
             <div class="inicio_imagen_container">
                 <img src="../images/iniciogato1.svg" alt="lucas" class="inicio_imagen">
             </div>
         </section>
-        <div class="popup" id="popup">
-            <span class="close-btn" id="closeBtn">&times;</span>
+        <div class="popup">
+            <!-- id="popup" -->
             <div class="popup-content">
                 <a href="https://certificates.soyhenry.com/new-cert?id=89b2076026fedf4b5e7d8b922c335d0e07610198ccdf1fe8f2cdce8b3b2c120c" target="_blank"><img src="../images/Certificados/Henry.png" alt="Certificado Henry" class="popup-img"></a>
                 <a href="https://www.efset.org/cert/zNdxfc" target="_blank"><img src="../images/Certificados/EnglishC2.png" alt="Certificado de Inglés" class="popup-img"></a>
             </div>
+            <span class="close-btn" id="closeBtn">&times;</span>
         </div>
         <section id="salto_pagina2" class="salto_pag2">
             <span class="salto_pag22"></span>
@@ -177,6 +179,10 @@
                       <input class="btn" type="submit" value="Send">
                     </form>
                 </div>
+                <div class="datos_container">
+                    <a href="mailto:caruso.developer@gmail.com" target="_blank" class="mail_icon"><i class="fa-regular fa-envelope"></i><span class="span_datos">caruso.developer@gmail.com</span></a>
+                    <a href="https://bit.ly/49dpTUg" target="_blank" class="whatsapp_icon"><i class="fa-brands fa-whatsapp"></i><span class="span_datos">+542612448680</span></a>
+                </div>
             </section>
             <footer>
                 <div class="footer_container">
@@ -194,10 +200,11 @@
                         <div class="footer_iconos">
                         <h3 class="subti_footer">SOCIAL NETWORKS</h3>
                             <div class="footer_icons">
-                                <a href="#linkedin" class="footer_icon"><img src="../images/linkedin.svg" alt="linkedin" class="footer_image"></a>
-                                <a href="#facebook" class="footer_icon"><img src="../images/facebook.svg" alt="facebook" class="footer_image"></a>
-                                <a href="#github" class="footer_icon"><img src="../images/github.svg" alt="github" class="footer_image"></a>
-                                <a href="#instagram" class="footer_icon"><img src="../images/instagram.svg" alt="instagram" class="footer_image"></a>   
+                                <a href="#linkedin" class="footer_icon"><i class='bx bxl-linkedin-square'></i></box-icon></a>
+                                <a href="#facebook" class="footer_icon"><i class='bx bxl-facebook-circle'></i></box-icon></a>
+                                <a href="#github" class="footer_icon"><i class='bx bxl-github'></i></box-icon></a>
+                                <!-- <img src="./images/iconos about/github2.svg" alt="github" class="footer_image"> -->
+                                <a href="#instagram" class="footer_icon"><i class='bx bxl-instagram'></i></a>   
                             </div>
                         </div>
                     </div>
@@ -212,7 +219,10 @@
     <script src="../js/flechaup.js"></script>
     <script src="../js/slider.js"></script>
     <script src="../js/smooth.js"></script>
-    <script src="../js/certificados.js"></script>
+    <!-- <script src="./js/certificados.js"></script> -->
     <script src="../js/parallax.js"></script>
+    <script src="../js/dark.js"></script>
+    <!-- <script src="./js/popup.js"></script> -->
+    <script src="../js/popupcert.js"></script>
 </body>
 </html>
