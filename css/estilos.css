@@ -927,8 +927,9 @@ body.dark .footer_año{
         padding: 0px;
     }
 
+
     .info_inicio{
-        clip-path: polygon(50% 95%, 100% 55%, 100% 0, 0 0, 0 55%);
+        clip-path: polygon(50% 85%, 100% 55%, 100% 0, 0 0, 0 55%);
         background-image: url("../images/vecteezylandscape.jpg");
         background-size: cover;
         background-position: bottom;
@@ -967,6 +968,48 @@ body.dark .footer_año{
     text-decoration: none;
     padding: 5px 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta2{
+    margin-top: 40px;
+    margin-left: 20px;
+    display: inline-block;
+    background-color: #1198ce;
+    justify-self: center;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta4{
+    margin-left: 2vw;
+    margin-top: 0px;
+    display: inline-block;
+    background-color: #03af20;
+    justify-self: center;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.config_container {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    top: 1vh; 
+    /* Alineación desde la parte superior */
+    right: 1.5vw; 
+    /* Alineación a la derecha */
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    z-index: 1;
+    
 }
 
 .switch{
@@ -1026,28 +1069,146 @@ body.dark .footer_año{
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.301);
     transition: transform 0.8s ease; /* Transición suave para la animación de desplazamiento */
     transform: translateX(-107%); /* Inicialmente, ocultar el menú desplazándolo hacia la izquierda */
-    z-index: 1;
+    /* z-index: 1; */
 } 
 
-.config_link{
+/* .config_link{
     margin-left: 0;
-}
+} */
 
 .flechas_menu{
     display: flex;
     position: fixed;
-    margin-top: 1.7vh;
+    margin-top: 0.2vh;
     margin-left: 10.5em;
     transition: transform 0.9s ease;
 }
 
 .fa-bars{
-    /* cursor: pointer;
-    color: #000000; */
+    /* position: fixed; */
+    cursor: pointer;
+    color: #000000;
     font-size: 24px;
 }
 
+.about {
+    margin-top: -13vh;
+    justify-content: center;
+    justify-self: center;
+    padding-left: 2em;
+    padding-bottom: 10px;
+    padding-right: 2em;
+    height: 100vh;
+}
 
+.sobre_mi{
+    margin-top: 5em;
+    padding-top: 2vh;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.sobre_mi_paragraph{
+    margin-top: -2vh;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
+
+body.dark .sobre_mi_paragraph{
+    color: rgb(141, 141, 141);
+}
+
+.sobre_mi_iconos{
+    justify-content: left;
+    display: wrap;
+    flex-wrap: wrap;
+    /* background-color: #e40a0a; */
+    margin-top: 2em;
+    gap: 0.5em;
+    display: flex;
+}
+
+.inicio_imagen{
+    display: none;
+}
+
+.flecha_upcontainer {
+    bottom: 6vh;
+    right: 2vw;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    position: fixed;
+    opacity: 0; /* Oculta la flecha inicialmente */
+    pointer-events: none; /* Evita que la flecha sea clickeable cuando está oculta */
+}
+
+.flecha_up3{
+    width: 40px;
+    opacity: 60%;
+    background-color: #ffffff91;
+    border-radius: 40%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.397);
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 7%;
+    width: 85vw;
+    height: 82vh;
+    z-index: 99;
+    overflow: auto;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  .popup.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .popup-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    width: 85vw;
+    gap: 6vw;
+    background-color: rgba(255, 255, 255, 0.932);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.281);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;  
+}
+
+.popup-img {
+    height: 8em; /* Ajusta el tamaño original de la imagen */
+    transition: transform 0.5s ease-in-out; /* Agrega una transición suave */
+}
+
+.close-btn {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    position: absolute;
+    top: -2%;
+    right: 0;
+    font-size: 50px;
+    color: #000000ea;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
 
     /* Otros estilos específicos para pantallas más pequeñas */
 }
