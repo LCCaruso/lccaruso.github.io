@@ -1156,10 +1156,10 @@ body.dark .sobre_mi_paragraph{
 .popup {
     display: none;
     position: absolute;
-    top: 120%;
+    top: 110%;
     left: 7%;
     width: 85vw;
-    height: 82vh;
+    height: 99vh;
     z-index: 99;
     overflow: auto;
     opacity: 0;
@@ -1179,10 +1179,10 @@ body.dark .sobre_mi_paragraph{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 65vh;
+    height: 85vh;
     width: 85vw;
     gap: 6vw;
-    background-color: rgba(255, 255, 255, 0.932);
+    background-color: rgba(255, 255, 255, 0.973);
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.281);
     padding-top: 5px;
     padding-bottom: 5px;
@@ -1193,7 +1193,7 @@ body.dark .sobre_mi_paragraph{
 }
 
 .popup-img {
-    height: 8em; /* Ajusta el tamaño original de la imagen */
+    height: 10em; /* Ajusta el tamaño original de la imagen */
     transition: transform 0.5s ease-in-out; /* Agrega una transición suave */
 }
 
@@ -1209,6 +1209,117 @@ body.dark .sobre_mi_paragraph{
     cursor: pointer;
     transition: transform 0.5s ease-in-out;
 }
+
+.testimony{
+    /* background-color: #fa8f8f; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-top:0;
+    padding-bottom: 0px;
+    padding-right: 50px;
+    /* margin-right: 10px; */
+    color: rgb(34, 34, 34);
+    height: 80vh;
+}
+.testimony__container {
+    /* display: wrap;
+    flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    /* padding-left: -80px; */
+    /* background-color: #10ca92; */
+    margin-left: 15%;
+}
+
+.testimony__body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 22px;
+}
+
+.testimony__arrow {
+    position: absolute;
+    top: 250%;
+    transform: translateY(-50%);
+    width: 40px;
+    cursor: pointer;
+}
+
+#before {
+    left: 1em;
+}
+
+#next {
+    right: 1em;
+}
+
+.testimony__text {
+    /* margin-bottom: 5px;  */
+    /* Ajusta el espaciado entre el texto y la imagen */
+    font-size: 16px;
+}
+
+.testimony__picture{
+    background-color: #db0a0a00;
+}
+
+.testimony__img {
+    /* background-color: #ec1a1a; */
+    /* display: none; */
+    width: 150px; /* Hace que la imagen ocupe el ancho completo del contenedor */
+    /* max-width: 400px;  */
+    /* Puedes ajustar el valor máximo según tus preferencias */
+    height: 150px;
+    /* margin-left: -40px; */
+    margin-bottom: 5px; /* Ajusta el espaciado entre la imagen y los iconos */
+    margin-top: -25px;
+    justify-content: center;
+    position: relative;
+}
+
+.iconos_container {
+    display: flex;
+    justify-content: center;
+}
+
+.icono_proyecto {
+    width: 30px; /* Ajusta el tamaño de los iconos según tus preferencias */
+    margin: 0; /* Ajusta el espaciado entre los iconos */
+}
+
+/* .testimony{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top:2vh;
+    padding-bottom:2vh;
+    padding-right: 10px;
+    color: rgb(34, 34, 34);
+    height: 90vh;
+}
+
+.iconos_container{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.icono_proyecto{
+    width: 30px;
+    cursor: pointer;
+
+}
+
+.testimony__container{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    gap: 1em;
+    align-items: center;
+} */
 
     /* Otros estilos específicos para pantallas más pequeñas */
 }
