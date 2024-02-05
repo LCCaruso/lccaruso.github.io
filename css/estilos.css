@@ -934,7 +934,7 @@ body.dark .footer_año{
         background-size: cover;
         background-position: bottom;
         overflow-x: hidden;
-        padding-left: 40px;
+        padding-left: 30px;
         /* padding-bottom: 2px; */
         padding-right: 20px;
         width: 100vw;
@@ -964,9 +964,9 @@ body.dark .footer_año{
     background-color: #1198ce;
     justify-self: center;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 10px 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -977,9 +977,9 @@ body.dark .footer_año{
     background-color: #1198ce;
     justify-self: center;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 10px 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -1170,10 +1170,10 @@ body.dark .sobre_mi_paragraph{
     height: 85vh;
     width: 85vw;
     gap: 6vw;
-    background-color: rgba(255, 255, 255, 0.925);
+    background-color: rgba(255, 255, 255, 0.952);
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.281);
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     border-radius: 20px;
     opacity: 0;
     transform: translateY(-50px);
@@ -1236,12 +1236,13 @@ body.dark .sobre_mi_paragraph{
     width: 100%;
     background-color: #ffffff;
     border-radius: 10px;
+    border: 1px solid grey;
     box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.226);
 }
 
 .testimony__arrow {
     position: absolute;
-    top: 255%;
+    top: 250%;
     transform: translateY(-50%);
     width: 35px;
     cursor: pointer;
@@ -1263,7 +1264,7 @@ body.dark .sobre_mi_paragraph{
 
 .subtitle{
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     color: #0378af;
     /* background-color: rgba(224, 210, 210, 0.452); */
     padding-bottom: 10px;
@@ -1285,8 +1286,8 @@ body.dark .sobre_mi_paragraph{
     margin-bottom: -10px;
     padding-bottom: 0px;
     padding-top: 0px;
-    width: 260px;
-    height: max-content;
+    width:100%;
+    height: 130px;
 }
 
 .testimony__img {
@@ -1308,7 +1309,7 @@ body.dark .sobre_mi_paragraph{
 }
 
 .testimony__review{
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     padding: 0 10px;
 }
