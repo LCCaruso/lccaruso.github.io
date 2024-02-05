@@ -936,7 +936,7 @@ body.dark .footer_año{
         overflow-x: hidden;
         padding-left: 40px;
         /* padding-bottom: 2px; */
-        padding-right: 20px;
+        padding-right: 10px;
         width: 100vw;
         height: 100vh;
         transition: 2s ease all;
@@ -953,7 +953,7 @@ body.dark .footer_año{
 
 .info_paragraph{
     margin: 10px 0 20px 0;
-    font-size: 20px;
+    font-size: 24px;
     color: rgba(0, 30, 68, 0.888);
     transition: 2s ease all;
 }
@@ -964,7 +964,7 @@ body.dark .footer_año{
     background-color: #1198ce;
     justify-self: center;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
     padding: 5px 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -977,24 +977,13 @@ body.dark .footer_año{
     background-color: #1198ce;
     justify-self: center;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
     padding: 5px 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.cta4{
-    margin-left: 2vw;
-    margin-top: 0px;
-    display: inline-block;
-    background-color: #03af20;
-    justify-self: center;
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
+
 
 .config_container {
     position: fixed;
@@ -1124,7 +1113,6 @@ body.dark .sobre_mi_paragraph{
     justify-content: left;
     display: wrap;
     flex-wrap: wrap;
-    /* background-color: #e40a0a; */
     margin-top: 2em;
     gap: 0.5em;
     display: flex;
@@ -1182,7 +1170,7 @@ body.dark .sobre_mi_paragraph{
     height: 85vh;
     width: 85vw;
     gap: 6vw;
-    background-color: rgba(255, 255, 255, 0.973);
+    background-color: rgba(255, 255, 255, 0.925);
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.281);
     padding-top: 5px;
     padding-bottom: 5px;
@@ -1202,7 +1190,7 @@ body.dark .sobre_mi_paragraph{
     padding: 0;
     height: 30px;
     position: absolute;
-    top: -2%;
+    top: 5%;
     right: 0;
     font-size: 50px;
     color: #000000ea;
@@ -1211,25 +1199,26 @@ body.dark .sobre_mi_paragraph{
 }
 
 .testimony{
-    /* background-color: #fa8f8f; */
     display: flex;
     flex-direction: column;
-    padding-left: 0;
-    padding-top:0;
+    padding-left: 0px;
+    padding-top: 0px;
     padding-bottom: 0px;
     padding-right: 50px;
-    /* margin-right: 10px; */
-    color: rgb(34, 34, 34);
-    height: 80vh;
-}
-.testimony__container {
-    /* display: wrap;
-    flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
-    /* padding-left: -80px; */
-    /* background-color: #10ca92; */
+    justify-items: center;
+    align-items: center;
+    color: rgb(34, 34, 34);
+    height: 100vh;
+    background-color: #e0e0e05d;
+
+}
+.testimony__container {
+    align-items: center;
+    justify-content: center;
     margin-left: 15%;
+    margin-bottom: 100px;
 }
 
 .testimony__body {
@@ -1238,14 +1227,17 @@ body.dark .sobre_mi_paragraph{
     flex-direction: column;
     text-align: center;
     font-size: 22px;
+    height: min-content;
 }
 
 .testimony__arrow {
     position: absolute;
-    top: 250%;
+    top: 260%;
     transform: translateY(-50%);
-    width: 40px;
+    width: 30px;
     cursor: pointer;
+    background-color: #c0c0c077;
+    border-radius: 50px;
 }
 
 #before {
@@ -1257,32 +1249,32 @@ body.dark .sobre_mi_paragraph{
 }
 
 .testimony__text {
-    /* margin-bottom: 5px;  */
-    /* Ajusta el espaciado entre el texto y la imagen */
     font-size: 16px;
 }
 
-.testimony__picture{
-    background-color: #db0a0a00;
+.subtitle{
+    text-align: left;
+    font-size: 24px;
+    color: #0378af;
 }
 
 .testimony__img {
-    /* background-color: #ec1a1a; */
-    /* display: none; */
-    width: 150px; /* Hace que la imagen ocupe el ancho completo del contenedor */
-    /* max-width: 400px;  */
-    /* Puedes ajustar el valor máximo según tus preferencias */
-    height: 150px;
-    /* margin-left: -40px; */
-    margin-bottom: 5px; /* Ajusta el espaciado entre la imagen y los iconos */
+    width: 250px; /* Hace que la imagen ocupe el ancho completo del contenedor */
+    height: 100px;
+    margin-left: -40px;
+    border-radius: 4px;
     margin-top: -25px;
     justify-content: center;
     position: relative;
 }
 
+.testimony__review{
+    font-size: 22px;
+}
+
 .iconos_container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .icono_proyecto {
@@ -1290,36 +1282,41 @@ body.dark .sobre_mi_paragraph{
     margin: 0; /* Ajusta el espaciado entre los iconos */
 }
 
-/* .testimony{
+.cv_111{
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
-    padding-top:2vh;
-    padding-bottom:2vh;
-    padding-right: 10px;
-    color: rgb(34, 34, 34);
-    height: 90vh;
-}
-
-.iconos_container{
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-}
-
-.icono_proyecto{
-    width: 30px;
-    cursor: pointer;
-
-}
-
-.testimony__container{
-    height: 80vh;
-    display: grid;
-    grid-template-columns: 20px 1fr 20px;
-    gap: 1em;
+    font-size: 20px;
+    color: #ffffff;
+    justify-content: center;
     align-items: center;
-} */
+    text-align: center;
+    padding: 20px;
+    margin-top: 0;
+}
+
+.cta4{
+    margin-left: 2vw;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #03af20;
+    justify-self: center;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.span_contacto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    color: #000000;
+    font-size: 22px;
+}
+
+
 
     /* Otros estilos específicos para pantallas más pequeñas */
 }
