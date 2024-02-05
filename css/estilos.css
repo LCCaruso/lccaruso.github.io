@@ -936,7 +936,7 @@ body.dark .footer_año{
         overflow-x: hidden;
         padding-left: 40px;
         /* padding-bottom: 2px; */
-        padding-right: 10px;
+        padding-right: 20px;
         width: 100vw;
         height: 100vh;
         transition: 2s ease all;
@@ -964,7 +964,7 @@ body.dark .footer_año{
     background-color: #1198ce;
     justify-self: center;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
     padding: 5px 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -977,7 +977,7 @@ body.dark .footer_año{
     background-color: #1198ce;
     justify-self: center;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
     padding: 5px 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -1211,14 +1211,14 @@ body.dark .sobre_mi_paragraph{
     align-items: center;
     color: rgb(34, 34, 34);
     height: 100vh;
-    background-color: #e0e0e05d;
+    /* background-color: #d6d6d648; */
 
 }
 .testimony__container {
     align-items: center;
     justify-content: center;
     margin-left: 15%;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 
 .testimony__body {
@@ -1232,11 +1232,11 @@ body.dark .sobre_mi_paragraph{
 
 .testimony__arrow {
     position: absolute;
-    top: 260%;
+    top: 265%;
     transform: translateY(-50%);
     width: 30px;
     cursor: pointer;
-    background-color: #c0c0c077;
+    background-color: #dddddd77;
     border-radius: 50px;
 }
 
@@ -1253,7 +1253,7 @@ body.dark .sobre_mi_paragraph{
 }
 
 .subtitle{
-    text-align: left;
+    text-align: center;
     font-size: 24px;
     color: #0378af;
 }
@@ -1270,11 +1270,12 @@ body.dark .sobre_mi_paragraph{
 
 .testimony__review{
     font-size: 22px;
+    text-align: center;
 }
 
 .iconos_container {
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 
 .icono_proyecto {
@@ -1285,7 +1286,7 @@ body.dark .sobre_mi_paragraph{
 .cv_111{
     display: flex;
     flex-direction: column;
-    font-size: 20px;
+    font-size: 22px;
     color: #ffffff;
     justify-content: center;
     align-items: center;
