@@ -1211,7 +1211,10 @@ body.dark .sobre_mi_paragraph{
     align-items: center;
     color: rgb(34, 34, 34);
     height: 100vh;
-    /* background-color: #d6d6d648; */
+    /* width: 50%; */
+    /* background-color: #7c7c7cad; */
+    /* border: 1px solid black; */
+    margin: 0 auto;
 
 }
 .testimony__container {
@@ -1219,33 +1222,39 @@ body.dark .sobre_mi_paragraph{
     justify-content: center;
     margin-left: 15%;
     margin-bottom: 120px;
+    /* background-color: #ffffff; */
+    /* width: 70%; */
 }
 
 .testimony__body {
     position: relative;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    font-size: 22px;
-    height: min-content;
+    /* text-align: justify; */
+    font-size: 18px;
+    height: max-content;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.226);
 }
 
 .testimony__arrow {
     position: absolute;
-    top: 265%;
+    top: 255%;
     transform: translateY(-50%);
-    width: 30px;
+    width: 35px;
     cursor: pointer;
-    background-color: #dddddd77;
+    /* background-color: #dddddd77; */
     border-radius: 50px;
 }
 
 #before {
-    left: 1em;
+    left: 0.8em;
 }
 
 #next {
-    right: 1em;
+    right: 0.8em;
 }
 
 .testimony__text {
@@ -1254,23 +1263,54 @@ body.dark .sobre_mi_paragraph{
 
 .subtitle{
     text-align: center;
-    font-size: 24px;
+    font-size: 22px;
     color: #0378af;
+    /* background-color: rgba(224, 210, 210, 0.452); */
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 1px solid black;
+    width: 250px;
+}
+.testimony__picture{
+    /* background-color: #b41a1a; */
+    /* margin-left: 0px;
+    margin-right: 0px; */
+    /* justify-content: center;
+    justify-items: center; */
+    background-color: #095cd800;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: -10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    width: 260px;
+    height: max-content;
 }
 
 .testimony__img {
-    width: 250px; /* Hace que la imagen ocupe el ancho completo del contenedor */
-    height: 100px;
-    margin-left: -40px;
-    border-radius: 4px;
-    margin-top: -25px;
-    justify-content: center;
-    position: relative;
+    width: 100%; /* Hace que la imagen ocupe el ancho completo del contenedor */
+    height: 120px;
+    /* margin-left: -5px; */
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    /* margin-top: 0px; */
+    /* justify-content: center; */
+    /* padding: 0 auto; */
+    /* position: relative; */
+    /* background-color: #d80909; */
 }
 
 .testimony__review{
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
+    padding: 0 10px;
 }
 
 .iconos_container {
