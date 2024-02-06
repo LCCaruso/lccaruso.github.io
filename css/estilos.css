@@ -1073,16 +1073,17 @@ body.dark .footer_año{
 .flechas_menu{
     display: flex;
     position: fixed;
-    margin-top: 0.2vh;
+    margin-top: 0.5vh;
     margin-left: 10.5em;
     transition: transform 0.9s ease;
 }
 
 .fa-bars{
     /* position: relative; */
+    opacity: 60%;
     cursor: pointer;
     color: #000000;
-    font-size: 24px;
+    font-size: 25px;
 }
 
 .about {
