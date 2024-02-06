@@ -929,14 +929,14 @@ body.dark .footer_año{
 
 
     .info_inicio{
-        clip-path: polygon(50% 85%, 100% 55%, 100% 0, 0 0, 0 55%);
-        background-image: url("../images/vecteezylandscape.jpg");
+        /* clip-path: polygon(50% 85%, 100% 55%, 100% 0, 0 0, 0 55%); */
+        /* background-image: url("../images/vecteezylandscape.jpg"); */
         background-size: cover;
         background-position: bottom;
-        overflow-x: hidden;
-        padding-left: 30px;
+        /* overflow-x: hidden; */
+        padding-left: 2em;
         /* padding-bottom: 2px; */
-        padding-right: 20px;
+        padding-right: 2em;
         width: 100vw;
         height: 100vh;
         transition: 2s ease all;
@@ -945,7 +945,7 @@ body.dark .footer_año{
  .info_titulo{
     display: flex;
     width: fit-content;
-    margin: 70px 0 10px 0;
+    margin: 70px 0px 10px 0px;
     font-size: 30px;
     color: rgba(0, 30, 68, 0.888);
     transition: 2s ease all;
@@ -964,10 +964,13 @@ body.dark .footer_año{
     background-color: #1198ce;
     justify-self: center;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
+    height: max-content;
+    width: max-content;
     text-decoration: none;
-    padding: 10px 10px;
+    padding: 10px 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 50px;
 }
 
 .cta2{
@@ -977,10 +980,11 @@ body.dark .footer_año{
     background-color: #1198ce;
     justify-self: center;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
-    padding: 10px 10px;
+    padding: 10px 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 50px;
 }
 
 
@@ -1345,8 +1349,9 @@ body.dark .sobre_mi_paragraph{
     color: white;
     font-size: 18px;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 10px 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 50px;
 }
 
 .span_contacto{
@@ -1395,6 +1400,24 @@ body.dark .sobre_mi_paragraph{
     margin-left: 0px;
   }
 
+  .btn{
+    margin-top: 5px;
+    display: inline-block;
+    background-color: #1198ce;
+    justify-self: center;
+    color: white;
+    font-size: 16px;
+    height: max-content;
+    width: max-content;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 50px;
+  }
+
+  /* .footer_container{
+    box-shadow: 0px 0px 0px white;
+  } */
 
   .footer_secciones_iconos{
     gap: 8em;
