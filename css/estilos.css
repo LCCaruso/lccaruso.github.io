@@ -594,7 +594,7 @@ body.dark .review_negrita{
 }
 
 body.dark .cv_1{
-    background-color: #010f4d79;
+    background-color: #00082bc2;
 }
 
 
@@ -607,6 +607,10 @@ body.dark .cv_1{
     align-items: center;
     padding: 15px;
     margin: 0;
+}
+
+body.dark .cv_111{
+    color: rgba(255, 255, 255, 0.877);
 }
 
 .cta4{
@@ -932,8 +936,8 @@ body.dark .footer_año{
     .info_inicio{
         /* clip-path: polygon(50% 85%, 100% 55%, 100% 0, 0 0, 0 55%); */
         /* background-image: url("../images/vecteezylandscape.jpg"); */
-        background-size: cover;
-        background-position: bottom;
+        /* background-size: cover;
+        background-position: bottom; */
         /* overflow-x: hidden; */
         padding-left: 2em;
         /* padding-bottom: 2px; */
@@ -953,10 +957,18 @@ body.dark .footer_año{
 }
 
 .info_paragraph{
-    margin: 10px 0 20px 0;
+    margin: 15px 0 20px 0;
     font-size: 24px;
     color: rgba(0, 30, 68, 0.888);
     transition: 2s ease all;
+}
+
+body.dark .info_paragraph{
+    width: 8em;
+    margin: 10px 0 20px 0;
+    font-size: 22px;
+    transition: 2s ease all;
+    color: rgba(255, 255, 255, 0.884);
 }
 
 .cta{
@@ -1105,10 +1117,11 @@ body.dark .footer_año{
 
 .sobre_mi_paragraph{
     margin-top: -2vh;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: auto;
+    width: 14em;
+    font-weight: 300;
     color: rgb(0, 0, 0);
-    text-align: justify;
+    text-align: left;
 }
 
 body.dark .sobre_mi_paragraph{
@@ -1173,7 +1186,7 @@ body.dark .sobre_mi_paragraph{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 90vh;
     width: 85vw;
     gap: 6vw;
     background-color: rgba(255, 255, 255, 0.952);
@@ -1221,8 +1234,12 @@ body.dark .sobre_mi_paragraph{
     /* background-color: #7c7c7cad; */
     /* border: 1px solid black; */
     margin: 0 auto;
-
 }
+
+body.dark .testimony{
+    color: white;
+}
+
 .testimony__container {
     align-items: center;
     justify-content: center;
@@ -1246,9 +1263,13 @@ body.dark .sobre_mi_paragraph{
     box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.226);
 }
 
+body.dark .testimony__body{
+    background-color: #1b1b1b;
+}
+
 .testimony__arrow {
     position: absolute;
-    top: 250%;
+    /* top: 200vh; */
     transform: translateY(-50%);
     width: 35px;
     cursor: pointer;
