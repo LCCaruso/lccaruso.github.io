@@ -934,17 +934,20 @@ body.dark .footer_año{
 
 
     .info_inicio{
-        /* clip-path: polygon(50% 85%, 100% 55%, 100% 0, 0 0, 0 55%); */
+        clip-path: circle(95% at 50% 0);
         /* background-image: url("../images/vecteezylandscape.jpg"); */
         /* background-size: cover;
         background-position: bottom; */
         /* overflow-x: hidden; */
         padding-left: 2em;
         /* padding-bottom: 2px; */
+        display: flex;
+        flex-direction: column;
+        /* justify-items: center; */
         padding-right: 2em;
         width: 100vw;
         height: 100vh;
-        transition: 2s ease all;
+        transition: 0s ease all;
  }
 
  .info_titulo{
@@ -1000,7 +1003,10 @@ body.dark .info_paragraph{
     border-radius: 50px;
 }
 
-
+.linea_ruta1{
+    border-right: 1px solid black;
+    margin-left: -20%;
+}
 
 .config_container {
     position: fixed;
@@ -1209,7 +1215,7 @@ body.dark .sobre_mi_paragraph{
     padding: 0;
     height: 30px;
     position: absolute;
-    top: 5%;
+    top: 10%;
     right: 0;
     font-size: 50px;
     color: #000000ea;
