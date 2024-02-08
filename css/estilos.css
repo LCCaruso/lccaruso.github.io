@@ -934,7 +934,7 @@ body.dark .footer_año{
 
 
     .info_inicio{
-        clip-path: circle(95% at 50% 0);
+        clip-path: circle(95% at 50% 0); 
         /* background-image: url("../images/vecteezylandscape.jpg"); */
         /* background-size: cover;
         background-position: bottom; */
