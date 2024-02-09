@@ -924,6 +924,10 @@ body.dark .footer_año{
     color: white;
 }
 
+.imagen_linea{
+    display: none;
+}
+
 
 /* max-width: 768px */
 
@@ -946,6 +950,10 @@ body.dark .footer_año{
     .linea_punteada{
         width: 15px;
         opacity: 80%;
+    }
+
+    body.dark .linea_punteada{
+        filter: invert(1); /* Invierte los colores de la imagen */
     }
 
     .inicio{
