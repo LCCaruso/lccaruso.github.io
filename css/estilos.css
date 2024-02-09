@@ -321,6 +321,8 @@ body.dark .cta2:hover{
     color: #000;
 }
 
+
+
 .salto_pag1{
     display: flex;
     flex-direction: row;
@@ -923,13 +925,31 @@ body.dark .footer_año{
 }
 
 
-
 /* max-width: 768px */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     body {
         /* Ajusta los estilos para pantallas más pequeñas */
         padding: 0px;
+    }
+
+    .imagen_linea{
+        display: flex;
+        position: absolute;
+        background-color: #ffffff00;
+        top: 41%;
+        left: 21%;
+        /* transform: rotate(180deg); */
+
+    }
+
+    .linea_punteada{
+        width: 15px;
+        opacity: 80%;
+    }
+
+    .inicio{
+        height: 80vh;
     }
 
 
@@ -948,6 +968,7 @@ body.dark .footer_año{
         width: 100vw;
         height: 100vh;
         transition: 0s ease all;
+        margin-bottom: 0px;
  }
 
  .info_titulo{
@@ -1003,10 +1024,8 @@ body.dark .info_paragraph{
     border-radius: 50px;
 }
 
-.linea_ruta1{
-    border-right: 1px solid black;
-    margin-left: -20%;
-}
+
+
 
 .config_container {
     position: fixed;
@@ -1105,7 +1124,7 @@ body.dark .info_paragraph{
 }
 
 .about {
-    margin-top: -13vh;
+    margin-top: 10%;
     justify-content: center;
     justify-self: center;
     padding-left: 2em;
@@ -1115,14 +1134,14 @@ body.dark .info_paragraph{
 }
 
 .sobre_mi{
-    margin-top: 5em;
+    margin-top: 0px;
     padding-top: 2vh;
     font-size: 30px;
     color: rgb(0, 0, 0);
 }
 
 .sobre_mi_paragraph{
-    margin-top: -2vh;
+    margin-top: 0px;
     font-size: auto;
     width: 14em;
     font-weight: 300;
@@ -1169,7 +1188,7 @@ body.dark .sobre_mi_paragraph{
 .popup {
     display: none;
     position: absolute;
-    top: 110%;
+    top: 85%;
     left: 7%;
     width: 85vw;
     height: 99vh;
@@ -1227,15 +1246,15 @@ body.dark .sobre_mi_paragraph{
     display: flex;
     flex-direction: column;
     padding-left: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 15%;
+    padding-bottom: 15%;
     padding-right: 50px;
     align-items: center;
     justify-content: center;
     justify-items: center;
     align-items: center;
     color: rgb(34, 34, 34);
-    height: 100vh;
+    height: auto;
     /* width: 100%; */
     /* background-color: #7c7c7cad; */
     /* border: 1px solid black; */
@@ -1393,7 +1412,8 @@ body.dark .testimony__body{
 }
 
 .wrapper{
-    width: 100%;
+    padding-top: 0px;
+    width: 100vw;
 }
 
 .formulario-container{
@@ -1405,6 +1425,10 @@ body.dark .testimony__body{
     width: 300px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.171);
 
+}
+
+hr{
+    display: none;
 }
 
 .form {
