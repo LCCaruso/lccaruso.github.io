@@ -1249,7 +1249,7 @@ body.dark .sobre_mi_paragraph{
 .popup {
     display: none;
     position: absolute;
-    top: 85%;
+    top: 100%;
     left: 7%;
     width: 85vw;
     height: 99vh;
