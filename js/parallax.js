@@ -8,7 +8,7 @@ function applyParallaxEffect(elementId, factor) {
   
   document.addEventListener('scroll', function() {
     // Aplicar parallax al elemento con id 'inicio' y factor 0.5
-    applyParallaxEffect('inicio', 0.1);
+    applyParallaxEffect('inicio', 0.25);
   
     // Aplicar parallax al elemento con id 'contact' y factor 0.3 (ajusta según sea necesario)
     applyParallaxEffect('contact', 0.8);
