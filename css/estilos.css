@@ -279,6 +279,27 @@ body.dark .info_paragraph{
     width: 500px;
 }
 
+.cta1{
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #1198ce;
+    justify-self: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta1:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+body.dark .cta1:hover{
+    background-color: #fff;
+    color: #000;
+}
+
 .cta{
     margin-top: 20px;
     display: inline-block;
@@ -939,14 +960,12 @@ body.dark .footer_año{
         padding: 0px;
     }
 
-    .imagen_linea{
+    /* .imagen_linea{
         display: flex;
         position: absolute;
         background-color: #ffffff00;
         top: 35vh;
         left: 21vw;
-        /* transform: rotate(180deg); */
-
     }
 
     body.dark .imagen_linea{
@@ -960,17 +979,17 @@ body.dark .footer_año{
     }
 
     body.dark .linea_punteada{
-        filter: invert(1); /* Invierte los colores de la imagen */
+        filter: invert(1);
         height: 45vh;
-    }
+    } */
 
     .inicio{
-        height: 80vh;
+        height: 100vh;
     }
 
 
     .info_inicio{
-        clip-path: circle(95% at 50% 0); 
+        clip-path: circle(115% at 100% 0); 
         /* background-image: url("../images/vecteezylandscape.jpg"); */
         /* background-size: cover;
         background-position: bottom; */
@@ -990,8 +1009,8 @@ body.dark .footer_año{
  .info_titulo{
     display: flex;
     width: fit-content;
-    margin: 70px 0px 10px 0px;
-    font-size: 4vh;
+    margin: 90px 0px 10px 0px;
+    font-size: 4.5vh;
     color: rgba(0, 30, 68, 0.888);
     transition: 2s ease all;
 }
@@ -1009,6 +1028,31 @@ body.dark .info_paragraph{
     font-size: 3vh;
     transition: 2s ease all;
     color: rgba(255, 255, 255, 0.884);
+}
+
+.cta1{
+    margin-top: 18vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-color: #fdd6a3;
+    justify-self: center;
+    color: rgb(9, 0, 41);
+    font-size: 3vh;
+    height: max-content;
+    width: max-content;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* border: 1px solid black; */
+    border-radius: 50px;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.555);
+}
+
+body.dark .cta1{
+    background-color: #000000;
+    color: white;
+    box-shadow: 0px 0px 30px 5px rgba(255, 255, 255, 0.87);
 }
 
 .cta{
