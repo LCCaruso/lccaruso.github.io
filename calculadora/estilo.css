@@ -1,0 +1,76 @@
+.igual {
+    background-color: rgb(3, 146, 235);
+    color: white;
+  }
+
+.igual:hover{
+    background-color: rgb(47, 159, 252);
+}
+
+.operacion{
+    background-color: lightgray;
+}
+
+.operacion:hover{
+    background-color: #e7e7e7;
+}
+
+.numero{
+    background-color: lightgray;
+}
+
+.numero:hover{
+    background-color:  #e7e7e7;
+}
+
+.borrar{
+    background-color: lightgreen;
+}
+
+.borrar:hover{
+    background-color: rgb(86, 247, 86);
+}
+
+.delete{
+    background-color :rgb(235, 137, 137);
+}
+
+.delete:hover{
+    background-color: #f85f5f;
+}
+
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calculator input {
+    width: 92%;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    font-size: 18px;
+  }
+  
+  .calculator .keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+  }
+  
+  .calculator button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* background-color: #f0f0f0; */
+  }
+  
+  /* .calculator button:hover {
+    background-color: #e0e0e0;
+  } */
+
