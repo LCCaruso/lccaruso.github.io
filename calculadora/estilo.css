@@ -69,6 +69,25 @@
     cursor: pointer;
     /* background-color: #f0f0f0; */
   }
+
+  .cerrarcontainer{
+   display: flex;
+   justify-content: center;
+  }
+
+  .cerrar{
+    padding: 10px;
+    background-color: #ffb13c;
+    color: black;
+    border-radius: 50px;
+    border: none;
+  }
+
+  .cerrar:hover{
+    background-color: black;
+    color: #ffffff;
+    cursor: pointer;
+  }
   
   /* .calculator button:hover {
     background-color: #e0e0e0;

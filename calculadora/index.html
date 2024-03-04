@@ -29,11 +29,20 @@
       <button onclick="appendToDisplay('0')" class="numero">0</button>
       <button onclick="appendToDisplay('.')" class="numero">.</button>
     </div>
-  </div>
+</div>
+<div class="cerrarcontainer">
+    <button onclick="closeCalculator()" class="cerrar">Cerrar calculadora</button>
+</div>
   <script src="script.js"></script>
   <audio id="clickSound">
     <source src="./tecla.mp3" type="audio/mpeg">
     <source src="./igual.mp3" type="audio/mpeg">
   </audio>
+  <script>
+    function closeCalculator() {
+      // Cerrar la ventana de la calculadora
+      window.close();
+    }
+  </script>
 </body>
 </html>
